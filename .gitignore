@@ -1,1 +1,5 @@
 gomumblesoundboard
+go.sum
+crt.pem
+key.pem
+.vscode

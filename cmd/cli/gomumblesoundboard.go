@@ -55,7 +55,8 @@ func main() {
 
 			// Start webserver
 			m := martini.Classic()
-			// martini.Static() is used, so public/index.html gets automagically served
+			m.Use(martini.Static("./public"))
+
 			m.Get("/files.json", func() string {
 				keys := make([]string, 0, len(files))
 				for k := range files {
