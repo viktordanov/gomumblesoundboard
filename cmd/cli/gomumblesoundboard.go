@@ -85,7 +85,7 @@ func main() {
 				stream.Stop()
 				return "ok"
 			})
-			m.Run()
+			m.RunOnAddr("127.0.0.1:3000")
 		},
 	})
 }
